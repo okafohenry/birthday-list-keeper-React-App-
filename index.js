@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Entry from './entry';
+import Edit from './edit';
+import './index.css';
 
 
 class BirthdaylistKeeper extends React.Component{
@@ -10,11 +13,19 @@ class BirthdaylistKeeper extends React.Component{
 			name: '',
 			day: '',
 			dob: '',
-			items : []
+			items : [],
+			currentItem: {},
+			dataEdited: {},
+			toggle: false,
+			loading: false
 		}
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleDelete = this.handleDelete.bind(this);
+		this.handleEdit  = this.handleEdit.bind(this);
+		this.handleEditCancel = this.handleEditCancel.bind(this);
+		this.handleUpdate = this.handleUpdate.bind(this);
+		this.dataChange = this.dataChange.bind(this);
 
 	}
 	
@@ -45,51 +56,103 @@ class BirthdaylistKeeper extends React.Component{
 		let items = this.state.items.filter((item, mapKey) => key !== mapKey);
 			this.setState({ items: items });
 	}
+	handleEdit(key){
+		this.setState({
+			currentItem: {...this.state.items[key]},
+			toggle: true 
+		});
+
+	}
+
+	handleEditCancel(){
+		this.setState({ 
+			currentItem: {},
+			toggle: false 
+		});
+	}	
+	handleUpdate(event){
+		event.preventDefault();
+		//const {name,day,dob} = this.state.dataEdited; 
+		
+			const item = this.state.currentItem;
+			let index = this.state.items.indexOf(item);
+			const newItemList = [...this.state.items];
+			newItemList.splice(index, 1, this.state.dataEdited);
 			
+			this.setState({ 
+				items: [...newItemList],
+				toggle: false 
+			});
+
+	}	
+	dataChange(event){
+		const target = event.target;
+		const value = target.value; //gets value of the textbox
+		const name = target.name;
+
+		this.setState (prev => ({ dataEdited: {...prev.dataEdited, [name]: value}	}));
+	}
+//displays loading icon for 5 seconds
+	componentDidMount(){
+		this.setState({ loading: true }, () => {
+			setTimeout(() => {
+				this.setState({loading: false});
+			}, 500)
+		});
+	}
 
 	render(){
 		return(
-			<div className="app">
-				<form className="form-group" onSubmit={this.handleSubmit} >
+			<div className="main">
+			{ 
+			this.state.loading? 
+				<div className="loading-icon">
+					<center>loading...</center>
+				</div>:
+				<div className="app">
+					<div className="title">Birthday List Keeper </div>
 
-				<input 
-					className=""
-					name="name"
-					onChange={this.handleChange}
-					value={this.state.name} 
-					placeholder= "Celebrants Name" 
-					required /> 
-				<input 
-					className=""
-					type="number" 
-					name="day"
-					min="1" 
-					max="31"
-					placeholder= "day" 
-					onChange={this.handleChange}
-					value={this.state.day} />
-				<input 
-					className=""
-					name="dob"
-					type="month" 
-					onChange={this.handleChange} 
-					value={this.state.dob}  />
+					<Entry
+						name={this.state.name}
+						day={this.state.day}
+						dob={this.state.dob}
+						onChange={this.handleChange}
+						onSubmit={this.handleSubmit} /> 
 
-
-				<button type="submit" className="btn btn-success">Add to list</button>
-				</form>
-				<ul>
-				{
-					this.state.items.map((item, key) => ( 
-					<li key={key}>
-						<span> {item.name} </span>
-						<span> {item.day} </span>
-						<span> {item.dob} </span>
-						<button>edit</button>
-						<button onClick={() => this.handleDelete(key)}>delete</button>
-					</li>
-				))}
-				</ul>
+					<ul className="item-list">
+					{ 
+						this.state.toggle ?
+						(
+							<Edit 
+								name={this.state.currentItem.name}
+								day={this.state.currentItem.day}
+								dob={this.state.currentItem.dob}
+								handleChange={this.handleChange}
+								handleUpdate={this.handleUpdate}
+								handleEditCancel={this.handleEditCancel}
+							/>
+						)
+						:
+						this.state.items.map((item, key) => (
+						<li key={key} className="item">
+							<div className="item-det">
+								<span> {item.name} </span>
+								<span> {item.day} </span>
+								<span> {item.dob} </span>
+							</div>
+							<div className="buttons">
+								<button 
+									className="edit btn btn-light"
+									onClick={() => this.handleEdit(key)} >edit</button>
+								<button 
+									className="del btn btn-danger" 
+									onClick={() => this.handleDelete(key)}>delete</button>
+							</div>
+						</li>
+					))}
+					</ul>
+				</div>
+			}
 			</div>
 			);
 	}
