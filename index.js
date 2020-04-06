@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Entry from './entry';
 import Edit from './edit';
 import './index.css';
+import Loading from './loading_img.gif';
 
 
 class BirthdaylistKeeper extends React.Component{
@@ -97,7 +98,7 @@ class BirthdaylistKeeper extends React.Component{
 		this.setState({ loading: true }, () => {
 			setTimeout(() => {
 				this.setState({loading: false});
-			}, 500)
+			}, 2000)
 		});
 	}
 
@@ -107,7 +108,7 @@ class BirthdaylistKeeper extends React.Component{
 			{ 
 			this.state.loading? 
 				<div className="loading-icon">
-					<center>loading...</center>
+					<center><img src={Loading} alt="Loading..." /></center>
 				</div>:
 				<div className="app">
 					<div className="title">Birthday List Keeper </div>
