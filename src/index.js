@@ -25,6 +25,7 @@ class BirthdaylistKeeper extends React.Component{
 		this.nameRef = createRef();
 		this.dayRef = createRef();
 		this.dobRef = createRef(); 
+		this.getMonth = this.getMonth.bind(this);
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleDelete = this.handleDelete.bind(this);
@@ -34,6 +35,16 @@ class BirthdaylistKeeper extends React.Component{
 		this.dataChange = this.dataChange.bind(this);
 
 	}
+
+	//Get Month from input type='month'
+	getMonth(dateValue){
+		let months = ['January','February','March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		const dobMonth = dateValue.substr(5,2);
+		const monthValue = dobMonth - 1;
+		const month = months[monthValue];
+		return month;
+	}
+
 	//handles onChange event of entry 
 	handleChange(event){
 		const target = event.target;
@@ -46,17 +57,12 @@ class BirthdaylistKeeper extends React.Component{
 	//handles onSubmit event of entry
 	handleSubmit(event){
 		event.preventDefault();
-		//Get Month from input type='month'
 		
-		let months = ['January','February','March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 		let dobValue = this.state.dob;
-		const dobMonth = dobValue.substr(5,2);
-		const monthValue = dobMonth - 1;
-		const dob = months[monthValue];
-
+		const dob = this.getMonth(dobValue);
+		
 		const {name, day, items} = this.state;
 	
-
 		items.push({name, day, dob});
 		this.setState({
 			items: items,
@@ -122,11 +128,7 @@ class BirthdaylistKeeper extends React.Component{
 		const day = this.dayRef.current;
 		const dob = this.dobRef.current;
 
-		let months = ['January','February','March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-		let dobValue = dob.value;
-		const dobMonth = dobValue.substr(5,2);
-		const monthValue = dobMonth - 1;
-		const month = months[monthValue];
+		const month = this.getMonth(dob.value)
 
 
 		this.setState (prev => ({ 
@@ -160,7 +162,7 @@ class BirthdaylistKeeper extends React.Component{
 						</center>
 					</div>:
 					<div className="app center">
-					
+
 						<HeaderIcon />
 						<Title />
 
@@ -192,9 +194,9 @@ class BirthdaylistKeeper extends React.Component{
 							this.state.items.map((item, key) => (
 							<li key={key} className="item">
 								<div className="item-det">
-									<span> {item.name} </span>
-									<span> {item.day} </span>
+									<span className="item-det-name"> {item.name} </span>									
 									<span> {item.dob} </span>
+									<span> {item.day} </span>
 								</div>
 								<div className="buttons">
 									<button 

@@ -100,7 +100,9 @@ input.name-entry, input.day-entry, input.dob-entry{
 	overflow-x: hidden;
 	color: #706F6F;
 	border-bottom: 1px solid #706F6F;
-	text-transform: capitalize;
+}
+.item-det-name{
+	text-transform: capitalize;	
 }
 .edit-btn, .del-btn{
 	padding: 3px 3px;
