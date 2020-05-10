@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/birthday-list-keeper-React-App-/static/css/main.56948a6a.chunk.css",
-    "main.js": "/birthday-list-keeper-React-App-/static/js/main.7aa99825.chunk.js",
-    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.7aa99825.chunk.js.map",
+    "main.css": "/birthday-list-keeper-React-App-/static/css/main.1b3d9df6.chunk.css",
+    "main.js": "/birthday-list-keeper-React-App-/static/js/main.8095b71d.chunk.js",
+    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.8095b71d.chunk.js.map",
     "runtime-main.js": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js",
     "runtime-main.js.map": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js.map",
-    "static/js/2.c94cd3dd.chunk.js": "/birthday-list-keeper-React-App-/static/js/2.c94cd3dd.chunk.js",
-    "static/js/2.c94cd3dd.chunk.js.map": "/birthday-list-keeper-React-App-/static/js/2.c94cd3dd.chunk.js.map",
+    "static/js/2.89ad41ef.chunk.js": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js",
+    "static/js/2.89ad41ef.chunk.js.map": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js.map",
     "index.html": "/birthday-list-keeper-React-App-/index.html",
-    "precache-manifest.a4bb405b570693025580563f34cf28ac.js": "/birthday-list-keeper-React-App-/precache-manifest.a4bb405b570693025580563f34cf28ac.js",
+    "precache-manifest.b531bd7513fec25f5ff130413b1242d0.js": "/birthday-list-keeper-React-App-/precache-manifest.b531bd7513fec25f5ff130413b1242d0.js",
     "service-worker.js": "/birthday-list-keeper-React-App-/service-worker.js",
-    "static/css/main.56948a6a.chunk.css.map": "/birthday-list-keeper-React-App-/static/css/main.56948a6a.chunk.css.map",
-    "static/js/2.c94cd3dd.chunk.js.LICENSE": "/birthday-list-keeper-React-App-/static/js/2.c94cd3dd.chunk.js.LICENSE",
-    "static/media/loading_img.gif": "/birthday-list-keeper-React-App-/static/media/loading_img.f12d8a99.gif"
+    "static/css/main.1b3d9df6.chunk.css.map": "/birthday-list-keeper-React-App-/static/css/main.1b3d9df6.chunk.css.map",
+    "static/js/2.89ad41ef.chunk.js.LICENSE": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js.LICENSE",
+    "static/media/index.css": "/birthday-list-keeper-React-App-/static/media/Rockwell-ExtraBold.704fdc79.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.7b18ef4a.js",
-    "static/js/2.c94cd3dd.chunk.js",
-    "static/css/main.56948a6a.chunk.css",
-    "static/js/main.7aa99825.chunk.js"
+    "static/js/2.89ad41ef.chunk.js",
+    "static/css/main.1b3d9df6.chunk.css",
+    "static/js/main.8095b71d.chunk.js"
   ]
 }
