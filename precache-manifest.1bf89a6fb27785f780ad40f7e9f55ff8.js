@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27b8c8fcc485eb18c1df631c8d1efc73",
+    "revision": "a979eaf869a59f14ab2a45d9baa0d901",
     "url": "/birthday-list-keeper-React-App-/index.html"
   },
   {
-    "revision": "18269c7635fdb62dde82",
-    "url": "/birthday-list-keeper-React-App-/static/css/main.1b3d9df6.chunk.css"
+    "revision": "6fd204a8a8bb7857ca13",
+    "url": "/birthday-list-keeper-React-App-/static/css/main.40e073cf.chunk.css"
   },
   {
     "revision": "73e1db2ee9198b48298a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js.LICENSE"
   },
   {
-    "revision": "18269c7635fdb62dde82",
-    "url": "/birthday-list-keeper-React-App-/static/js/main.8095b71d.chunk.js"
+    "revision": "6fd204a8a8bb7857ca13",
+    "url": "/birthday-list-keeper-React-App-/static/js/main.02ef2532.chunk.js"
   },
   {
     "revision": "3375556d7a8061d70e61",
