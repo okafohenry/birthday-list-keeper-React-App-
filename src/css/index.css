@@ -1,0 +1,260 @@
+@font-face {
+	font-family: 'Rockwell-ExtraBold';
+	src: url('./fonts/Rockwell-ExtraBold.otf');
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	background: #f5f2d0;
+}
+
+.header_icon{
+	height: 40px;
+	width: 40px;
+	margin-top: 30px;
+}
+.title{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	font-family: 'Rockwell-ExtraBold';	
+	font-weight: normal;
+	font-size: 13px;	
+	color: #FF3F60;
+}
+.entry-pane{ 
+	width: 74%;
+	margin:auto;
+}
+.entry{
+	width: 95%;
+	position: relative;
+	top: 0px;
+	display: inline-grid;
+}
+
+input.name-entry{
+	width: 100%;
+	padding: 5px 7px;
+}
+input.day-entry{
+	position: relative;
+	top: 15px;
+	width: 35%;		
+	padding: 5px 7px;
+}
+input.dob-entry{
+	width: 62.5%; 		
+	padding: 4.5px 7px;
+	position: relative;	
+	left: 135px;
+	bottom: 22px;
+}
+input.name-entry, input.day-entry, input.dob-entry{ 
+	border: 1px solid #E5E5E5;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.btn-success{
+	background: #FFD117;
+	border: 1px solid #FFD117;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:hover,
+.btn-success:focus,
+ button.btn-add.btn-success:active{
+	background: #FFD51D;
+	border-color: #FFD51D;
+}
+
+
+.item-list{
+	background: #fff;
+	width: 350px;
+	height: 270px;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: auto;
+	position: relative;
+	top: 70px;
+	overflow-y: scroll;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius:  10px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+.item{
+	width: 100%;
+	margin-left: -18px;
+	padding: 5px 7px;
+	font-size: 14.5px;
+	display: inline-flex;
+	list-style: none;
+}
+.item-det{				
+	text-align: left;
+	padding-top: 7px;
+	width: 60%;
+	overflow-x: hidden;
+	color: #706F6F;
+	border-bottom: 1px solid #706F6F;
+}
+.edit-btn, .del-btn{
+	padding: 3px 3px;
+	border-radius: 0;
+}
+	
+.edit-btn{
+	color: #A1A1A1;
+	background: #E5E5E5;
+}
+.del-btn{
+	background: #FF3F60;
+	border-color: #FF3F60;
+}
+
+
+@media screen and (max-width: 361px){
+	input.dob-entry{
+		position: relative;	
+		left: 92px;
+	}
+	.item-list{
+		width: 290px;
+	}
+}
+
+@media screen and (min-width:362px) and (max-width: 450px){
+	input.dob-entry{
+		position: relative;	
+		left: 115px;
+	}	
+}
+
+@media screen and (min-width:452px) and (max-width: 515px){
+	input.dob-entry{
+		position: relative;	
+		left: 130px;
+	}
+	.item-list{
+		width: 350px;
+	}
+	.item-det{
+		width: 65%;
+	}
+}
+
+@media screen and (min-width:520px) and (max-width: 604px){
+	input.dob-entry{
+		position: relative;	
+		left: 150px;
+	}
+	.item-list{
+		width: 400px;
+	}
+	.item-det{
+		width: 73%;
+	}
+}
+
+@media screen and (min-width: 605px) and (max-width: 920px){
+	.header_icon{
+		height: 40px;
+		width: 55px;
+	}
+	.title{	
+		font-weight: normal;
+		font-size: 18px;
+	}
+	.entry-pane{ 
+		width: 79%;
+		margin: auto;
+		position: relative;
+		top: 30px;
+	}
+	.entry{
+		width: 90%;
+		position: relative;
+		display: inline;
+	}
+	input.name-entry, input.day-entry, input.dob-entry{
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	input.name-entry{
+		width: 37%;
+	}
+	input.day-entry{
+		width: 15%;		
+	}
+	input.dob-entry{
+		width: 26%; 	
+	}
+	.item-list{
+		width: 70%;
+		height: 300px;
+	}
+	
+	.btn-success{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.item-det{
+		width:75.5%;		
+		letter-spacing: 2px;
+	}
+	.edit-btn, .del-btn{
+		padding-left: 3.5px;
+		padding-right: 3.5px;
+	}
+	
+	
+}
+@media screen and (min-width:920px){
+	
+	.title{	
+		font-weight: normal;
+		font-size: 20px;
+	}
+	form.form-group.entry-pane{		
+		width: 540px;
+	}
+	.entry-pane{ 	
+		position: relative;
+		top: 30px;
+	}
+	.entry{
+		display: inline;
+	}
+	input.name-entry, input.day-entry, input.dob-entry{
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	input.name-entry{
+		width: 200px;
+	}
+	input.day-entry{
+		width: 60px;		
+	}
+	input.dob-entry{
+		width: 180px; 	
+	}
+	.item-list{
+		width: 550px;
+		height: 300px;
+	}
+	
+	.btn-success{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.item-det{
+		width: 80%;
+		letter-spacing: 2px;
+	}
+}
+

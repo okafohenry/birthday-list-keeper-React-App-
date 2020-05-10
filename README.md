@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# birthday-list-keeper-React-App-
+Friends are special and remembering a friends birthday communicates care. The birthday List keeper App is a CRUD web app that provides a way to keep records of birthday dates. This app will help you worry less about memorizing a friends birthday.
+
+**** Features Yet to be Implemented ****
+--> Edit Button
+--> Delete Button
+--> styling
+
+
+
+**** implemented Features ****
+--> Add button
+>>>>>>> c07bb8563f8fc92edfcdcfebc8182f2ed298d158

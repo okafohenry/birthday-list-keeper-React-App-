@@ -5,7 +5,10 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.0.0",
+<<<<<<< HEAD
     "gh-pages": "^2.0.1",
+=======
+>>>>>>> c07bb8563f8fc92edfcdcfebc8182f2ed298d158
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
@@ -33,5 +36,11 @@
       "last 1 safari version"
     ]
   },
+<<<<<<< HEAD
   "devDependencies": {}
+=======
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+>>>>>>> c07bb8563f8fc92edfcdcfebc8182f2ed298d158
 }
