@@ -1,10 +1,10 @@
 import React, {createRef} from 'react';
 import ReactDOM from 'react-dom';
 import LoadingIcon from './loading_icon';
-import HeaderIcon from './title_icon';
-import Title from './title';
+import Header from './header';
 import Entry from './entry';
 import Edit from './edit';
+import Display from './display';
 import './css/index.css';
 
 
@@ -84,7 +84,6 @@ class BirthdaylistKeeper extends React.Component{
 			currentItem: {...this.state.items[key]},
 			toggle: true 
 		});
-		console.log(this.state.currentItem);
 	}
 
 	//handles onClick event of Cancel button in update
@@ -155,29 +154,28 @@ class BirthdaylistKeeper extends React.Component{
 		return(
 			<div className="main">
 				{ 
-				this.state.loading? 
-					<div className="loading-icon">
-						<center>
-							<LoadingIcon />
-						</center>
-					</div>:
-					<div className="app center">
+				/****   displays when loading is set to true ****/
+					this.state.loading ? 
+						<div className="loading-icon">
+							<center>
+								<LoadingIcon />
+							</center>
+						</div>
+					:
+						<div className="app center">
+							<Header />
+							<Entry
+								name={this.state.name}
+								day={this.state.day}
+								dob={this.state.dob}
+								onChange={this.handleChange}
+								onSubmit={this.handleSubmit} 
+								setRef={this.setRef} /> 
 
-						<HeaderIcon />
-						<Title />
 
-						<Entry
-							name={this.state.name}
-							day={this.state.day}
-							dob={this.state.dob}
-							onChange={this.handleChange}
-							onSubmit={this.handleSubmit} 
-							setRef={this.setRef} /> 
-
-						<ul className="item-list">
 						{ 
 							this.state.toggle ?
-							(
+						/****** displays Edit component when toggle is set *****/
 								<Edit 
 									nameRef={this.nameRef}
 									dayRef={this.dayRef}
@@ -189,35 +187,38 @@ class BirthdaylistKeeper extends React.Component{
 									handleUpdate={this.handleUpdate}
 									handleEditCancel={this.handleEditCancel}
 								/>
-							)
 							:
-							this.state.items.map((item, key) => (
-							<li key={key} className="item">
-								<div className="item-det">
-									<span className="item-det-name"> {item.name} </span>									
-									<span> {item.dob} </span>
-									<span> {item.day} </span>
+							<center>
+								<div className="items-display">
+									<table className="item-list" >
+									 	<tr> 
+											<th>Celebrants Name</th>
+											<th>Month</th>
+											<th>Date</th>
+											<th></th>
+										</tr>
+									{ 
+										this.state.items.map((item, key) => (
+										<Display
+											key={key} 
+											name={item.name}
+											dob={item.dob}
+											day={item.day}
+											handleEdit={() => this.handleEdit(key) }
+											handleDelete={() => this.handleDelete(key)}
+										/>
+									))}
+									</table>
 								</div>
-								<div className="buttons">
-									<button 
-										className="edit-btn btn btn-light"
-										onClick={() => this.handleEdit(key)} >edit</button>
-									<button 
-										className="del-btn btn btn-danger" 
-										onClick={() => this.handleDelete(key)}>delete</button>
-								</div>
-							</li>
-						))}
-						</ul>
-					</div>
+							</center>
+						}
+						</div>
 				}
-				</div>
-				);
-		}
+			</div>
+		);
+		
+	}
 }
-
-
-
 
 
 ReactDOM.render(<BirthdaylistKeeper />, document.getElementById('root'));
