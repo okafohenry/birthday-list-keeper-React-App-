@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a979eaf869a59f14ab2a45d9baa0d901",
+    "revision": "2e413cc10e4d74827fe847ade24c4953",
     "url": "/birthday-list-keeper-React-App-/index.html"
   },
   {
-    "revision": "6fd204a8a8bb7857ca13",
-    "url": "/birthday-list-keeper-React-App-/static/css/main.40e073cf.chunk.css"
+    "revision": "54ed7eb77233f7b5a314",
+    "url": "/birthday-list-keeper-React-App-/static/css/main.3589e8fa.chunk.css"
   },
   {
     "revision": "73e1db2ee9198b48298a",
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js.LICENSE"
   },
   {
-    "revision": "6fd204a8a8bb7857ca13",
-    "url": "/birthday-list-keeper-React-App-/static/js/main.02ef2532.chunk.js"
+    "revision": "54ed7eb77233f7b5a314",
+    "url": "/birthday-list-keeper-React-App-/static/js/main.aba91bac.chunk.js"
   },
   {
     "revision": "3375556d7a8061d70e61",
     "url": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js"
   },
   {
-    "revision": "704fdc79c6cf3acf1b5d3f98dab4562b",
-    "url": "/birthday-list-keeper-React-App-/static/media/Rockwell-ExtraBold.704fdc79.otf"
+    "revision": "0b2aeb1c9f580b22533476443b47f0ad",
+    "url": "/birthday-list-keeper-React-App-/static/media/RobotoSlab-VariableFont_wght.0b2aeb1c.ttf"
   }
 ]);

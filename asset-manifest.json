@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/birthday-list-keeper-React-App-/static/css/main.40e073cf.chunk.css",
-    "main.js": "/birthday-list-keeper-React-App-/static/js/main.02ef2532.chunk.js",
-    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.02ef2532.chunk.js.map",
+    "main.css": "/birthday-list-keeper-React-App-/static/css/main.3589e8fa.chunk.css",
+    "main.js": "/birthday-list-keeper-React-App-/static/js/main.aba91bac.chunk.js",
+    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.aba91bac.chunk.js.map",
     "runtime-main.js": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js",
     "runtime-main.js.map": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js.map",
     "static/js/2.89ad41ef.chunk.js": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js",
     "static/js/2.89ad41ef.chunk.js.map": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js.map",
     "index.html": "/birthday-list-keeper-React-App-/index.html",
-    "precache-manifest.1bf89a6fb27785f780ad40f7e9f55ff8.js": "/birthday-list-keeper-React-App-/precache-manifest.1bf89a6fb27785f780ad40f7e9f55ff8.js",
+    "precache-manifest.b7a1bd9a8ba145f5d817d5d664b527e9.js": "/birthday-list-keeper-React-App-/precache-manifest.b7a1bd9a8ba145f5d817d5d664b527e9.js",
     "service-worker.js": "/birthday-list-keeper-React-App-/service-worker.js",
-    "static/css/main.40e073cf.chunk.css.map": "/birthday-list-keeper-React-App-/static/css/main.40e073cf.chunk.css.map",
+    "static/css/main.3589e8fa.chunk.css.map": "/birthday-list-keeper-React-App-/static/css/main.3589e8fa.chunk.css.map",
     "static/js/2.89ad41ef.chunk.js.LICENSE": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js.LICENSE",
-    "static/media/index.css": "/birthday-list-keeper-React-App-/static/media/Rockwell-ExtraBold.704fdc79.otf"
+    "static/media/index.css": "/birthday-list-keeper-React-App-/static/media/RobotoSlab-VariableFont_wght.0b2aeb1c.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.7b18ef4a.js",
     "static/js/2.89ad41ef.chunk.js",
-    "static/css/main.40e073cf.chunk.css",
-    "static/js/main.02ef2532.chunk.js"
+    "static/css/main.3589e8fa.chunk.css",
+    "static/js/main.aba91bac.chunk.js"
   ]
 }

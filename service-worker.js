@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/birthday-list-keeper-React-App-/precache-manifest.1bf89a6fb27785f780ad40f7e9f55ff8.js"
+  "/birthday-list-keeper-React-App-/precache-manifest.b7a1bd9a8ba145f5d817d5d664b527e9.js"
 );
 
 self.addEventListener('message', (event) => {
