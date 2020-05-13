@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/birthday-list-keeper-React-App-/static/css/main.3589e8fa.chunk.css",
-    "main.js": "/birthday-list-keeper-React-App-/static/js/main.aba91bac.chunk.js",
-    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.aba91bac.chunk.js.map",
+    "main.css": "/birthday-list-keeper-React-App-/static/css/main.390becc8.chunk.css",
+    "main.js": "/birthday-list-keeper-React-App-/static/js/main.cf5952f3.chunk.js",
+    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.cf5952f3.chunk.js.map",
     "runtime-main.js": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js",
     "runtime-main.js.map": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js.map",
-    "static/js/2.89ad41ef.chunk.js": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js",
-    "static/js/2.89ad41ef.chunk.js.map": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js.map",
+    "static/js/2.45a2220a.chunk.js": "/birthday-list-keeper-React-App-/static/js/2.45a2220a.chunk.js",
+    "static/js/2.45a2220a.chunk.js.map": "/birthday-list-keeper-React-App-/static/js/2.45a2220a.chunk.js.map",
     "index.html": "/birthday-list-keeper-React-App-/index.html",
-    "precache-manifest.b7a1bd9a8ba145f5d817d5d664b527e9.js": "/birthday-list-keeper-React-App-/precache-manifest.b7a1bd9a8ba145f5d817d5d664b527e9.js",
+    "precache-manifest.c38a61b4c75b9fd281e216752d5c7d65.js": "/birthday-list-keeper-React-App-/precache-manifest.c38a61b4c75b9fd281e216752d5c7d65.js",
     "service-worker.js": "/birthday-list-keeper-React-App-/service-worker.js",
-    "static/css/main.3589e8fa.chunk.css.map": "/birthday-list-keeper-React-App-/static/css/main.3589e8fa.chunk.css.map",
-    "static/js/2.89ad41ef.chunk.js.LICENSE": "/birthday-list-keeper-React-App-/static/js/2.89ad41ef.chunk.js.LICENSE",
+    "static/css/main.390becc8.chunk.css.map": "/birthday-list-keeper-React-App-/static/css/main.390becc8.chunk.css.map",
+    "static/js/2.45a2220a.chunk.js.LICENSE": "/birthday-list-keeper-React-App-/static/js/2.45a2220a.chunk.js.LICENSE",
     "static/media/index.css": "/birthday-list-keeper-React-App-/static/media/RobotoSlab-VariableFont_wght.0b2aeb1c.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.7b18ef4a.js",
-    "static/js/2.89ad41ef.chunk.js",
-    "static/css/main.3589e8fa.chunk.css",
-    "static/js/main.aba91bac.chunk.js"
+    "static/js/2.45a2220a.chunk.js",
+    "static/css/main.390becc8.chunk.css",
+    "static/js/main.cf5952f3.chunk.js"
   ]
 }
