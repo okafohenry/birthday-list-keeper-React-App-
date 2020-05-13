@@ -107,7 +107,7 @@ class BirthdaylistKeeper extends React.Component{
 	
 	
 		const item = this.state.currentItem;
-		let index = this.state.items.indexOf(item);
+		let index = this.state.items.findIndex(x => x.name === item.name);
 		const newItemList = [...this.state.items];
 		newItemList.splice(index, 1, this.state.dataEdited);
 		

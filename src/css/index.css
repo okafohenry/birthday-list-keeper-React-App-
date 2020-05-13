@@ -63,7 +63,9 @@ label{
 	line-height: 30px;
 }
 
-input.name-entry, input.day-entry, input.dob-entry{
+input.name-entry, input.day-entry, input.dob-entry, 
+input.name-edit, input.day-edit, input.dob-edit,
+.update-btn, .cancel-edit-btn{
 	border: 1px solid var(--border-color);
 	box-sizing: border-box;
 	border-radius: 7px;
@@ -192,6 +194,14 @@ th{
 	width: 150px;
 	padding: 1.5px 0 1.5px 10px;
 }
+.update-btn{
+	color: var(--page-title);
+}
+.cancel-edit-btn{
+	color: var(--delete-btn);
+}
+
+
 
 @media screen and (max-width: 285px){
 	.title{
@@ -332,52 +342,3 @@ th{
 		width: 70%;
 	}
 }
-/**
-@media screen and (max-width: 450px){
-	.header_icon{
-		margin-top: 15px;
-	}
-	.title{
-		font-size: 18px;
-		margin-top: -15px;
-		margin-left: 20px;
-	}
-	.title-header{
-		position: relative;
-		left: 60px;
-	}
-	.balloons{	
-		position: relative;
-		left: 0px;
-	}
-	.entry-pane{
-		margin-top: 0;
-		margin-left: 100px;
-	}
-	label{
-		display: block;
-	}
-	input.name-entry, .day-dob-entry{
-		position: relative;
-		left: 0;
-	}
-	.day-dob-entry-wrapper{
-		margin-left: -15px;
-	}
-	
-}
-
-**/
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -26,8 +26,8 @@ const Edit = (props) => (
 				onChange={props.handleChange}
 				placeholder={props.dob} />
 
-			<button type="submit">update</button>
-			<button onClick={props.handleEditCancel}>cancel</button>
+			<button type="submit" className="update-btn">update</button>
+			<button onClick={props.handleEditCancel} className="cancel-edit-btn">cancel</button>
 		</form>
 	</center>
 );
