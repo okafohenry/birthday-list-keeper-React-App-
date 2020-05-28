@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Display = (props) => (
+const Display = props => (
 	<>
 		<tr key={props.key} className="item">
 				<td className="item-det-name"> {props.name} </td>									

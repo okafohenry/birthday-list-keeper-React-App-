@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Edit = (props) => (
+const Edit = props => (
 	<center>
 		<form onSubmit={props.handleUpdate} className="edit-pane">
 			<input 

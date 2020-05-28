@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Entry = (props) => ( 
+const Entry = props => ( 
 	<center>
 		<form className="form-group entry-pane" onSubmit={props.onSubmit} >
 			<div className="entry">

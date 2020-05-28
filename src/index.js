@@ -1,11 +1,11 @@
 import React, {createRef} from 'react';
 import ReactDOM from 'react-dom';
-import LoadingIcon from './loading_icon';
 import Header from './header';
 import Entry from './entry';
 import Edit from './edit';
 import Display from './display';
 import './css/index.css';
+
 
 
 class BirthdaylistKeeper extends React.Component{
@@ -25,28 +25,21 @@ class BirthdaylistKeeper extends React.Component{
 		this.nameRef = createRef();
 		this.dayRef = createRef();
 		this.dobRef = createRef(); 
-		this.getMonth = this.getMonth.bind(this);
-		this.handleChange = this.handleChange.bind(this);
-		this.handleSubmit = this.handleSubmit.bind(this);
-		this.handleDelete = this.handleDelete.bind(this);
-		this.handleEdit  = this.handleEdit.bind(this);
-		this.handleEditCancel = this.handleEditCancel.bind(this);
-		this.handleUpdate = this.handleUpdate.bind(this);
-		this.dataChange = this.dataChange.bind(this);
 
 	}
 
-	//Get Month from input type='month'
-	getMonth(dateValue){
+	
+//Get Month from input type='month'
+	getMonth = dateValue => {  
 		let months = ['January','February','March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 		const dobMonth = dateValue.substr(5,2);
 		const monthValue = dobMonth - 1;
 		const month = months[monthValue];
 		return month;
-	}
+	};
 
 	//handles onChange event of entry 
-	handleChange(event){
+	handleChange = event => {  
 		const target = event.target;
 		const value = target.value; //gets value of the textbox
 		const name = target.name; //gets the name of the textbox
@@ -55,7 +48,7 @@ class BirthdaylistKeeper extends React.Component{
 		
 	};
 	//handles onSubmit event of entry
-	handleSubmit(event){
+	handleSubmit = event => {  
 		event.preventDefault();
 		
 		let dobValue = this.state.dob;
@@ -74,28 +67,28 @@ class BirthdaylistKeeper extends React.Component{
 	};
 
 	//handles onClick event of Delete button in Displayed Items
-	handleDelete(key){
+	handleDelete = key => {  
 		let items = this.state.items.filter((item, mapKey) => key !== mapKey);
 			this.setState({ items: items });
-	}
+	};
 	//handles onClick event of Edit button in displayed items
-	handleEdit(key){
+	handleEdit = key => {  
 		this.setState({
 			currentItem: {...this.state.items[key]},
 			toggle: true 
 		});
-	}
+	};
 
 	//handles onClick event of Cancel button in update
-	handleEditCancel(){
+	handleEditCancel = () => {  
 		this.setState({ 
 			currentItem: {},
 			toggle: false 
 		});
-	}	
+	};	
 
 	//handles onClick event of Update Button in update
-	handleUpdate(event){
+	handleUpdate = event => {  
 		event.preventDefault(); 
 	
 		const name = this.nameRef.current;
@@ -107,6 +100,7 @@ class BirthdaylistKeeper extends React.Component{
 	
 	
 		const item = this.state.currentItem;
+		//uses findIndex method to find index of object element in an array
 		let index = this.state.items.findIndex(x => x.name === item.name);
 		const newItemList = [...this.state.items];
 		newItemList.splice(index, 1, this.state.dataEdited);
@@ -117,10 +111,10 @@ class BirthdaylistKeeper extends React.Component{
 		});
 			
 
-	}	
+	};	
 
 	//handles onChange event in Edit
-	dataChange(){
+	dataChange = () => {  
 
 		//Get Month from input type='month'			
 		const name = this.nameRef.current;
@@ -137,83 +131,59 @@ class BirthdaylistKeeper extends React.Component{
 							 dob: month
 						}	
 		}));
-	}
-
+	};
 
 	
-//displays loading icon for 5 seconds
-	componentDidMount(){
-		this.setState({ loading: true }, () => {
-			setTimeout(() => {
-				this.setState({loading: false});
-			}, 2000)
-		});
-	}
-
 	render(){
 		return(
 			<div className="main">
-				{ 
-				/****   displays when loading is set to true ****/
-					this.state.loading ? 
-						<div className="loading-icon">
-							<center>
-								<LoadingIcon />
-							</center>
-						</div>
-					:
-						<div className="app center">
-							<Header />
-							<Entry
-								name={this.state.name}
-								day={this.state.day}
-								dob={this.state.dob}
-								onChange={this.handleChange}
-								onSubmit={this.handleSubmit} 
-								setRef={this.setRef} /> 
+				<div className="app center">
+					<Header />
+					<Entry
+						name={this.state.name}
+						day={this.state.day}
+						dob={this.state.dob}
+						onChange={this.handleChange}
+						onSubmit={this.handleSubmit} 
+						setRef={this.setRef} /> 
 
-
-						{ 
-							this.state.toggle ?
-						/****** displays Edit component when toggle is set *****/
-								<Edit 
-									nameRef={this.nameRef}
-									dayRef={this.dayRef}
-									dobRef={this.dobRef}
-									name={this.state.currentItem.name}
-									day={this.state.currentItem.day}
-									dob={this.state.currentItem.dob}
-									handleChange={this.dataChange}
-									handleUpdate={this.handleUpdate}
-									handleEditCancel={this.handleEditCancel}
-								/>
-							:
-							<center>
-								<div className="items-display">
-									<table className="item-list" >
-									 	<tr> 
-											<th>Celebrants Name</th>
-											<th>Month</th>
-											<th>Date</th>
-											<th></th>
-										</tr>
-									{ 
-										this.state.items.map((item, key) => (
-										<Display
-											key={key} 
-											name={item.name}
-											dob={item.dob}
-											day={item.day}
-											handleEdit={() => this.handleEdit(key) }
-											handleDelete={() => this.handleDelete(key)}
-										/>
-									))}
-									</table>
-								</div>
-							</center>
-						}
-						</div>
-				}
+					{ 	this.state.toggle ?
+					/****** displays Edit component when toggle is set *****/
+						<Edit 
+							nameRef={this.nameRef}
+							dayRef={this.dayRef}
+							dobRef={this.dobRef}
+							name={this.state.currentItem.name}
+							day={this.state.currentItem.day}
+							dob={this.state.currentItem.dob}
+							handleChange={this.dataChange}
+							handleUpdate={this.handleUpdate}
+							handleEditCancel={this.handleEditCancel}  />
+						:
+						<center>
+							<div className="items-display">
+								<table className="item-list" >
+								 	<tr> 
+										<th>Celebrants Name</th>
+										<th>Month</th>
+										<th>Date</th>
+										<th></th>
+									</tr>
+								{ 
+									this.state.items.map((item, key) => (
+									<Display
+										key={key} 
+										name={item.name}
+										dob={item.dob}
+										day={item.day}
+										handleEdit={() => this.handleEdit(key) }
+										handleDelete={() => this.handleDelete(key)}	/>
+								))}
+								</table>
+							</div>
+						</center>
+					}
+					</div>
 			</div>
 		);
 		
