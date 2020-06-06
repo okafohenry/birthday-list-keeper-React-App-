@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/birthday-list-keeper-React-App-/static/css/main.390becc8.chunk.css",
-    "main.js": "/birthday-list-keeper-React-App-/static/js/main.cf5952f3.chunk.js",
-    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.cf5952f3.chunk.js.map",
+    "main.js": "/birthday-list-keeper-React-App-/static/js/main.d85f4f63.chunk.js",
+    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.d85f4f63.chunk.js.map",
     "runtime-main.js": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js",
     "runtime-main.js.map": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js.map",
-    "static/js/2.45a2220a.chunk.js": "/birthday-list-keeper-React-App-/static/js/2.45a2220a.chunk.js",
-    "static/js/2.45a2220a.chunk.js.map": "/birthday-list-keeper-React-App-/static/js/2.45a2220a.chunk.js.map",
+    "static/js/2.978aae14.chunk.js": "/birthday-list-keeper-React-App-/static/js/2.978aae14.chunk.js",
+    "static/js/2.978aae14.chunk.js.map": "/birthday-list-keeper-React-App-/static/js/2.978aae14.chunk.js.map",
     "index.html": "/birthday-list-keeper-React-App-/index.html",
-    "precache-manifest.c38a61b4c75b9fd281e216752d5c7d65.js": "/birthday-list-keeper-React-App-/precache-manifest.c38a61b4c75b9fd281e216752d5c7d65.js",
+    "precache-manifest.7682a5b50d85bc4b0cc30106eb0d3747.js": "/birthday-list-keeper-React-App-/precache-manifest.7682a5b50d85bc4b0cc30106eb0d3747.js",
     "service-worker.js": "/birthday-list-keeper-React-App-/service-worker.js",
     "static/css/main.390becc8.chunk.css.map": "/birthday-list-keeper-React-App-/static/css/main.390becc8.chunk.css.map",
-    "static/js/2.45a2220a.chunk.js.LICENSE": "/birthday-list-keeper-React-App-/static/js/2.45a2220a.chunk.js.LICENSE",
+    "static/js/2.978aae14.chunk.js.LICENSE": "/birthday-list-keeper-React-App-/static/js/2.978aae14.chunk.js.LICENSE",
     "static/media/index.css": "/birthday-list-keeper-React-App-/static/media/RobotoSlab-VariableFont_wght.0b2aeb1c.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.7b18ef4a.js",
-    "static/js/2.45a2220a.chunk.js",
+    "static/js/2.978aae14.chunk.js",
     "static/css/main.390becc8.chunk.css",
-    "static/js/main.cf5952f3.chunk.js"
+    "static/js/main.d85f4f63.chunk.js"
   ]
 }
