@@ -19,13 +19,26 @@ class BirthdaylistKeeper extends React.Component{
 			items : [],
 			currentItem: {},
 			dataEdited: {},
-			toggle: false,
-			loading: false
+			toggle: false
 		}
 		this.nameRef = createRef();
 		this.dayRef = createRef();
 		this.dobRef = createRef(); 
 
+	}
+
+	//persist State
+
+	//fetches stored state items fron local storage on component mount
+	componentDidMount(){
+		const data = localStorage.getItem('friends-list');
+		if (data) {
+			this.setState({ items: JSON.parse(data)});
+		}
+	}
+	//saves every(next) state update to local storage as a string
+	componentWillUpdate(nextProps, nextState){
+		localStorage.setItem('friends-list', JSON.stringify(nextState.items));
 	}
 
 	
