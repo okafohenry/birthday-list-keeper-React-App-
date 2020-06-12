@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/birthday-list-keeper-React-App-/static/css/main.390becc8.chunk.css",
-    "main.js": "/birthday-list-keeper-React-App-/static/js/main.d85f4f63.chunk.js",
-    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.d85f4f63.chunk.js.map",
+    "main.js": "/birthday-list-keeper-React-App-/static/js/main.9e3057d0.chunk.js",
+    "main.js.map": "/birthday-list-keeper-React-App-/static/js/main.9e3057d0.chunk.js.map",
     "runtime-main.js": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js",
     "runtime-main.js.map": "/birthday-list-keeper-React-App-/static/js/runtime-main.7b18ef4a.js.map",
     "static/js/2.978aae14.chunk.js": "/birthday-list-keeper-React-App-/static/js/2.978aae14.chunk.js",
     "static/js/2.978aae14.chunk.js.map": "/birthday-list-keeper-React-App-/static/js/2.978aae14.chunk.js.map",
     "index.html": "/birthday-list-keeper-React-App-/index.html",
-    "precache-manifest.7682a5b50d85bc4b0cc30106eb0d3747.js": "/birthday-list-keeper-React-App-/precache-manifest.7682a5b50d85bc4b0cc30106eb0d3747.js",
+    "precache-manifest.9aee3598dd6f6bb6cc01ceb953855b59.js": "/birthday-list-keeper-React-App-/precache-manifest.9aee3598dd6f6bb6cc01ceb953855b59.js",
     "service-worker.js": "/birthday-list-keeper-React-App-/service-worker.js",
     "static/css/main.390becc8.chunk.css.map": "/birthday-list-keeper-React-App-/static/css/main.390becc8.chunk.css.map",
     "static/js/2.978aae14.chunk.js.LICENSE": "/birthday-list-keeper-React-App-/static/js/2.978aae14.chunk.js.LICENSE",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.7b18ef4a.js",
     "static/js/2.978aae14.chunk.js",
     "static/css/main.390becc8.chunk.css",
-    "static/js/main.d85f4f63.chunk.js"
+    "static/js/main.9e3057d0.chunk.js"
   ]
 }
